@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicios de Bajo Control: alarmas, cámaras de vigilancia, riego automatizado, tecnología para piletas y sistemas a medida en 9 de Julio." />
+  <title>Servicios — Bajo Control</title>
+  <!-- Meta autor -->
+  <meta name="author" content="Julián Mozún" />
+
+  <!-- Favicon y theme -->
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <meta name="theme-color" content="#DA0F0F" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Servicios — Bajo Control" />
+  <meta property="og:description" content="Alarmas, cámaras, riego automatizado, piletas, movimiento de suelos y sistemas a medida. Instalación profesional en 9 de Julio y la región." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Bajo Control" />
+
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-overrides.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+<style>
+    /* Estilos extra solo para esta página */
+    .servicio-detalle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--gris-claro);
+    }
+    .servicio-detalle:last-child { border-bottom: none; }
+    .servicio-detalle:nth-child(even) .servicio-detalle__img { order: 2; }
+    .servicio-detalle:nth-child(even) .servicio-detalle__texto { order: 1; }
+
+    .servicio-detalle__img {
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 0;
+    }
+    .servicio-detalle__img img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+    .servicio-detalle__titulo {
+      font-family: var(--fuente-titulo);
+      font-size: 1.9rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    .servicio-detalle__lista {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .servicio-detalle__lista li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .servicio-detalle__lista li::before {
+      content: '✔';
+      color: var(--rojo);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .page-hero {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-family: var(--fuente-titulo);
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      margin-bottom: 0.8rem;
+    }
+    .page-hero h1 span { color: var(--rojo); }
+    .page-hero p { color: rgba(255,255,255,0.7); font-size:1rem; max-width:500px; margin:0 auto; }
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1rem;
+      font-family: var(--fuente-titulo);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.5); }
+    .breadcrumb a:hover { color: var(--rojo); }
+
+    @media (max-width: 768px) {
+      .servicio-detalle {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .servicio-detalle:nth-child(even) .servicio-detalle__img { order: 0; }
+      .servicio-detalle:nth-child(even) .servicio-detalle__texto { order: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+  <header>
+    <nav class="navbar" aria-label="Menú principal">
+      <a href="../index.html" class="navbar__logo" aria-label="Inicio">
+        <div class="navbar__logo-oval"><span>Bajo Control</span></div>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="activo">Servicios</a></li>
+        <li><a href="nosotros.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> / Servicios</p>
+      <h1>Nuestros <span>servicios</span></h1>
+      <p>Soluciones tecnológicas instaladas personalmente para que tu tranquilidad esté siempre garantizada.</p>
+    </section>
+
+    <section class="seccion" aria-labelledby="tit-servicios-detalle">
+      <div class="contenedor container">
+        <h2 class="seccion__titulo" id="tit-servicios-detalle" style="margin-bottom:2.5rem;">
+          Cómo puedo <span>ayudarte</span>
+        </h2>
+
+        <!-- Alarmas -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/alarma.webp" class="img-fluid rounded" alt="Panel de alarma instalado en la pared de una vivienda" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Alarmas y sistemas de seguridad</h3>
+            <p style="color:#555; line-height:1.7;">
+              Instalo y configuro sistemas de alarma profesionales adaptados a las
+              necesidades de tu hogar o comercio. Desde los sensores hasta la central de monitoreo,
+              todo queda ajustado a tu medida.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Alarmas perimetrales e interiores</li>
+              <li>Sensores de movimiento, apertura y rotura de vidrios</li>
+              <li>Conexión a central de monitoreo</li>
+              <li>Notificaciones en tu celular en tiempo real</li>
+              <li>Mantenimiento y revisión periódica</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cámaras -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/camaras.webp" class="img-fluid rounded" alt="Cámara de seguridad exterior montada sobre pared de piedra" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Cámaras de vigilancia</h3>
+            <p style="color:#555; line-height:1.7;">
+              Sistemas CCTV e IP de alta definición, con acceso remoto desde tu teléfono.
+              Podés ver en tiempo real lo que pasa en tu casa o negocio desde cualquier lugar del mundo.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Cámaras IP y CCTV HD/Full HD</li>
+              <li>Visión nocturna infrarroja</li>
+              <li>Grabación continua y por detección de movimiento</li>
+              <li>Acceso remoto desde smartphone y PC</li>
+              <li>Almacenamiento en DVR/NVR o en la nube</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Riego -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/riego.webp" class="img-fluid rounded" alt="Aspersor de riego automático funcionando sobre césped verde" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Riego automatizado</h3>
+            <p style="color:#555; line-height:1.7;">
+              Diseño e instalo sistemas de riego inteligente
+              que funcionan solos, cuidan tu jardín y ahorran agua.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Diseño personalizado del circuito de riego</li>
+              <li>Programación horaria y por zonas</li>
+              <li>Sensores de humedad del suelo</li>
+              <li>Control desde app o tablero físico</li>
+              <li>Sistemas para jardines, huertas y parques</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Piletas -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/pileta.webp" class="img-fluid rounded" alt="Pileta con iluminación LED azul al atardecer" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Tecnología avanzada para piletas</h3>
+            <p style="color:#555; line-height:1.7;">
+              Automatizá el mantenimiento de tu pileta para disfrutarla sin preocupaciones.
+              Control total desde tu celular sobre la temperatura, las bombas y la iluminación.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Automatización de bombas y filtrado</li>
+              <li>Control de temperatura e iluminación LED</li>
+              <li>Alarmas de seguridad perimetral</li>
+              <li>Monitoreo y control remoto vía app</li>
+              <li>Integración con sistemas de riego y seguridad</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Movimiento de suelos -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/movimiento.webp" class="img-fluid rounded" alt="Minicargadora trabajando en una obra de movimiento de suelos" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Movimiento de suelos e infraestructura</h3>
+            <p style="color:#555; line-height:1.7;">
+              Ejecuto obras de excavación precisa, zanjeos para tendido de redes y limpieza
+              de canales con maquinaria propia de última generación. Trabajos limpios, planificados
+              y operados personalmente para garantizar resultados a medida del proyecto.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Excavaciones precisas con minicargadora RIPPA RS04</li>
+              <li>Zanjeo para tendido de redes eléctricas, cableados y cañerías</li>
+              <li>Limpieza de canales con miniexcavadora RIPPA R15-PRO</li>
+              <li>Plataforma tijera para montajes técnicos en altura</li>
+              <li>Operación a cargo de un especialista técnico, sin intermediarios</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- A medida -->
+        <div class="servicio-detalle row align-items-center g-4">
+          <div class="servicio-detalle__img col-12"><img src="../assets/img/domotica.webp" class="img-fluid rounded" alt="Panel de control domótico táctil en pared de interior" loading="lazy" width="451" height="367" /></div>
+          <div class="servicio-detalle__texto col-12 col-md-7">
+            <h3 class="servicio-detalle__titulo">Sistemas tecnológicos a medida</h3>
+            <p style="color:#555; line-height:1.7;">
+              Si tenés una necesidad específica que no entra en ninguna categoría estándar,
+              hablemos. Desarrollo soluciones personalizadas integrando distintos sistemas.
+            </p>
+            <ul class="servicio-detalle__lista list-unstyled">
+              <li>Consultoría técnica sin cargo</li>
+              <li>Diseño de soluciones integradas</li>
+              <li>Automatización del hogar (domótica básica)</li>
+              <li>Integración de sistemas existentes</li>
+              <li>Asesoramiento en equipos y materiales</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="seccion seccion--rojo" aria-label="Solicitar presupuesto">
+      <div class="contenedor container" style="text-align:center;">
+        <h2 class="seccion__titulo" style="color:var(--blanco); margin-bottom:1rem;">
+          ¿Cuál de estos servicios necesitás?
+        </h2>
+        <p style="color:rgba(255,255,255,0.85); margin-bottom:2rem; max-width:480px; margin-left:auto; margin-right:auto;">
+          Escribime y te doy un presupuesto sin costo ni compromiso.
+        </p>
+        <a href="contacto.html" class="btn btn--blanco">Solicitar presupuesto gratuito</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Bajo Control</div>
+    <div class="footer-sep"></div>
+    <p>
+      📍 9 de Julio, Buenos Aires (CP 6500)<br />
+      📧 <a href="mailto:bajocontrolmozun@gmail.com" style="color:rgba(255,255,255,0.65);">bajocontrolmozun@gmail.com</a>
+      &nbsp;·&nbsp;
+      📞 <a href="tel:+5423174055851" style="color:rgba(255,255,255,0.65);">(+54) 2317 40-5851</a>
+    </p>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a
+    href="https://wa.me/5492317405851?text=Hola%20Juli%C3%A1n%2C%20te%20escribo%20desde%20el%20sitio%20web%20de%20Bajo%20Control.%20Me%20interesa%20pedirte%20un%20presupuesto."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

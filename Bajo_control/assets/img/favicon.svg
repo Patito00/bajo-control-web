@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fondo negro de marca -->
+  <rect width="64" height="64" fill="#111111" rx="10"/>
+  
+  <!-- Óvalo rojo (identitario de Bajo Control) -->
+  <ellipse 
+    cx="32" 
+    cy="32" 
+    rx="22" 
+    ry="14" 
+    fill="none" 
+    stroke="#DA0F0F" 
+    stroke-width="3"/>
+  
+  <!-- Monograma BC -->
+  <text 
+    x="32" 
+    y="32" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    font-family="Georgia, 'Times New Roman', serif" 
+    font-weight="700" 
+    font-size="20" 
+    fill="#F8F8F8">BC</text>
+</svg>

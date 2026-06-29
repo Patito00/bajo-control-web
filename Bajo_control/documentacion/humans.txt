@@ -1,0 +1,22 @@
+/* humans */
+    Name: Matias Molinari
+    Role: Frontend Developer
+    Email: matimol000@gmail.com
+    
+ 
+
+    Name: Mathias DelValle
+    Role: UI designer
+    Email: delvallemathias0@gmail.com
+
+
+
+    Name: Milagros Mozún
+    Role: UX Researcher / Líder
+    Email: milagrosmozun2004@gmail.com
+
+
+
+    Name: Victoria Pavon
+    Role: QA / Documentation
+    Email: vickypavonfernandez@gmail.com

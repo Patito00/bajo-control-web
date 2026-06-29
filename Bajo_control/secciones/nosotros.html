@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conocé a Julián Mozún, fundador de Bajo Control. Más de 20 años de experiencia en tecnología y seguridad. Especialización técnica certificada en control automático y sistemas digitales." />
+  <title>Sobre mí — Bajo Control</title>
+  <!-- Meta autor -->
+  <meta name="author" content="Julián Mozún" />
+
+  <!-- Favicon y theme -->
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <meta name="theme-color" content="#DA0F0F" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sobre mí — Julián Mozún · Bajo Control" />
+  <meta property="og:description" content="Conocé a Julián Mozún, fundador de Bajo Control. Técnico graduado del Instituto ORT en Control Automático y Sistemas Digitales." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Bajo Control" />
+
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-overrides.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .page-hero {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-family: var(--fuente-titulo);
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      margin-bottom: 0.8rem;
+    }
+    .page-hero h1 span { color: var(--rojo); }
+    .page-hero p { color: rgba(255,255,255,0.7); max-width:500px; margin:0 auto; }
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1rem;
+      font-family: var(--fuente-titulo);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.5); }
+    .breadcrumb a:hover { color: var(--rojo); }
+
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .valor-card {
+      background: var(--blanco);
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      border-top: 4px solid var(--rojo);
+      box-shadow: var(--sombra);
+    }
+    .valor-card__icono {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    .valor-card__titulo {
+      font-family: var(--fuente-titulo);
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .valor-card__texto {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--rojo);
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: var(--rojo);
+      border-radius: 50%;
+      border: 3px solid var(--blanco);
+      box-shadow: 0 0 0 2px var(--rojo);
+    }
+    .timeline-item__año {
+      font-family: var(--fuente-titulo);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--rojo);
+      margin-bottom: 3px;
+    }
+    .timeline-item__titulo {
+      font-family: var(--fuente-titulo);
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 3px;
+    }
+    .timeline-item__texto {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header>
+    <nav class="navbar" aria-label="Menú principal">
+      <a href="../index.html" class="navbar__logo" aria-label="Inicio">
+        <div class="navbar__logo-oval"><span>Bajo Control</span></div>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html" class="activo">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> / Sobre mí</p>
+      <h1>Hola, soy <span>Julián Mozún</span></h1>
+      <p>Fundador y responsable técnico de Bajo Control. Me encargo personalmente de la dirección, ejecución y el control de calidad en cada obra o instalación de la región.</p>
+    </section>
+
+    <!-- Presentación -->
+    <section class="seccion" aria-labelledby="tit-presentacion">
+      <div class="contenedor container">
+        <div class="sobre-grid row align-items-center g-4">
+          <div class="sobre-img col-12 col-md-6">
+            <img
+              src="../assets/img/julian-mozun.webp"
+              class="img-fluid w-100 rounded"
+              alt="Retrato de Julián Mozún, especialista técnico de campo, trabajando con su notebook"
+              loading="lazy"
+              width="900" height="822"
+            />
+          </div>
+          <div class="sobre-texto col-12 col-md-6">
+            <h2 class="seccion__titulo" id="tit-presentacion">
+            Dirección técnica y operativa de <span>Bajo Control</span>
+            </h2>
+            <p style="color:#444; line-height:1.8; margin-bottom:1rem;">
+            Como técnico graduado del Instituto ORT en Control Automático y Sistemas Digitales, fundé este espacio bajo tres pilares fundamentales: <strong> respaldo profesional, prolijidad en el detalle y soluciones definitivas</strong>.
+            </p>
+            <p style="color:#444; line-height:1.8; margin-bottom:1rem;">
+              A lo largo de los años construí mi reputación en 9 de Julio a base de trabajo honesto y
+              la recomendación de cada cliente satisfecho.
+            </p>
+            <blockquote>
+            "Mi meta es que tengas la absoluta tranquilidad de que cada trabajo en tu propiedad funcione exactamente como necesitás, sin fallas ni imprevistos."
+            </blockquote>
+            <p style="color:#444; line-height:1.8;">
+            Establezco mi centro operativo en 9 de Julio y dispongo de la logística necesaria para trasladar mis equipos técnicos y maquinarias a todas las localidades vecinas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="seccion seccion--gris" aria-labelledby="tit-valores">
+      <div class="contenedor container">
+        <h2 class="seccion__titulo" id="tit-valores" style="margin-bottom:2rem;">
+          Mis <span>valores</span> profesionales
+        </h2>
+        <div class="valores-grid row row-cols-1  g-4">
+          <div class="valor-card card h-100">
+            <div class="valor-card__icono">🤝</div>
+            <h3 class="valor-card__titulo">Confianza</h3>
+            <p class="valor-card__texto">Mi negocio se construyó sobre la confianza. Cada cliente es una relación de largo plazo, no una venta.</p>
+          </div>
+          <div class="valor-card card h-100">
+            <div class="valor-card__icono">🎯</div>
+            <h3 class="valor-card__titulo">Precisión técnica</h3>
+            <p class="valor-card__texto">Cada instalación se hace con cuidado. Reviso, pruebo y ajusto hasta que todo funciona perfectamente.</p>
+          </div>
+          <div class="valor-card card h-100">
+            <div class="valor-card__icono">💬</div>
+            <h3 class="valor-card__titulo">Cercanía</h3>
+            <p class="valor-card__texto"> La comunicación es centralizada y directa conmigo. Al no haber intermediarios, te garantizo asesoramiento técnico claro y respuestas ágiles ante cualquier duda.</p>
+          </div>
+          <div class="valor-card card h-100">
+            <div class="valor-card__icono">🔧</div>
+            <h3 class="valor-card__titulo">Responsabilidad</h3>
+            <p class="valor-card__texto">Asumo la responsabilidad completa de los sistemas que implemento. Si se requiere algún ajuste o calibración posterior, vuelvo al terreno para solucionarlo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trayectoria -->
+    <section class="seccion" aria-labelledby="tit-trayectoria">
+      <div class="contenedor container">
+        <div style="max-width:600px; margin:0 auto;">
+          <h2 class="seccion__titulo" id="tit-trayectoria" style="margin-bottom:2.5rem;">
+            Mi <span>trayectoria</span>
+          </h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-item__año">Mis inicios</div>
+              <div class="timeline-item__titulo">Primeros pasos en el rubro</div>
+              <p class="timeline-item__texto">Comienzo instalando alarmas básicas en hogares de 9 de Julio. La recomendación de boca en boca fue el motor de crecimiento.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__año">Crecimiento</div>
+              <div class="timeline-item__titulo">Expansión de servicios</div>
+              <p class="timeline-item__texto">Incorporo sistemas de cámaras IP, riego automatizado y tecnología para piletas. La cartera de clientes crece sostenidamente.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__año">Consolidación</div>
+              <div class="timeline-item__titulo">Referente local en tecnología y seguridad</div>
+              <p class="timeline-item__texto">Bajo Control se consolida como una marca de confianza en la región. Clientes de toda la zona confían sus proyectos en mis manos.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item__año">Hoy</div>
+              <div class="timeline-item__titulo">+20 años, el mismo compromiso</div>
+              <p class="timeline-item__texto">Continúo trabajando personalmente en cada proyecto, incorporando nuevas tecnologías y manteniendo los valores que me distinguen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="seccion seccion--rojo" aria-label="Contacto">
+      <div class="contenedor container" style="text-align:center;">
+        <h2 class="seccion__titulo" style="color:var(--blanco); margin-bottom:1rem;">
+          ¿Hablamos?
+        </h2>
+        <p style="color:rgba(255,255,255,0.85); margin-bottom:2rem;">
+          Escribime para evaluar los requerimientos técnicos de tu propiedad, comercio o establecimiento rural.
+        </p>
+        <a href="contacto.html" class="btn btn--blanco">Solicitar una Evaluación Técnica</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Bajo Control</div>
+    <div class="footer-sep"></div>
+    <p>
+      📍 9 de Julio, Buenos Aires (CP 6500)<br />
+      📧 <a href="mailto:bajocontrolmozun@gmail.com" style="color:rgba(255,255,255,0.65);">bajocontrolmozun@gmail.com</a>
+      &nbsp;·&nbsp;
+      📞 <a href="tel:+5423174055851" style="color:rgba(255,255,255,0.65);">(+54) 2317 40-5851</a>
+    </p>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a
+    href="https://wa.me/5492317405851?text=Hola%20Juli%C3%A1n%2C%20te%20escribo%20desde%20el%20sitio%20web%20de%20Bajo%20Control.%20Me%20interesa%20pedirte%20un%20presupuesto."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

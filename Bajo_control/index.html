@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bajo Control — Soluciones en tecnología y seguridad. Alarmas, cámaras, riego automatizado y sistemas para piletas." />
+  <meta name="keywords" content="alarmas, cámaras de seguridad, riego automatizado, piletas, 9 de Julio, servicio técnico" />
+  <meta name="author" content="Julián Mozún" />
+  <title>Bajo Control — Tecnología y Seguridad · 9 de Julio</title>
+  <!-- Favicon y theme -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
+  <meta name="theme-color" content="#DA0F0F" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bajo Control — Tecnología y Seguridad · 9 de Julio" />
+  <meta property="og:description" content="Soluciones integrales en tecnología y seguridad. Alarmas, cámaras, riego, piletas, movimiento de suelos y sistemas a medida en 9 de Julio, Buenos Aires." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Bajo Control" />
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-overrides.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+      <a href="index.html" class="navbar__logo" aria-label="Inicio Bajo Control">
+        <div class="navbar__logo-oval">
+          <span>Bajo Control</span>
+        </div>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="navbar__nav" id="navMenu" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="secciones/servicios.html">Servicios</a></li>
+        <li><a href="secciones/nosotros.html">Sobre mí</a></li>
+        <li><a href="secciones/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" aria-label="Presentación">
+      <div class="hero__contenido">
+        <p class="hero__eyebrow">9 de Julio, Buenos Aires</p>
+
+        <div class="hero__logo-oval">
+          <h1>Bajo Control</h1>
+        </div>
+
+        <p class="hero__tagline">"Todo está Bajo Control"</p>
+        <p class="hero__sub">
+          Soluciones integrales en tecnología y seguridad para que tu hogar o negocio
+          esté siempre protegido, automatizado y en las mejores manos.
+        </p>
+
+        <div class="hero__chips" role="list" aria-label="Servicios">
+          <span class="hero__chip" role="listitem">🔒 Alarmas</span>
+          <span class="hero__chip" role="listitem">📷 Cámaras</span>
+          <span class="hero__chip" role="listitem">💧 Riego</span>
+          <span class="hero__chip" role="listitem">🏊 Piletas</span>
+          <span class="hero__chip" role="listitem">🍃 Movimiento de suelos</span>
+          <span class="hero__chip" role="listitem">⚙️ Sistemas a medida</span>
+        </div>
+
+        <div class="hero__ctas d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center">
+          <a href="secciones/contacto.html" class="btn btn--blanco">Pedir un presupuesto</a>
+          <a href="secciones/servicios.html" class="btn btn--outline-blanco">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICIOS (resumen) ==================== -->
+    <section class="seccion" id="servicios" aria-labelledby="tit-servicios">
+      <div class="contenedor container">
+        <h2 class="seccion__titulo" id="tit-servicios">¿En qué te <span>puedo ayudar</span>?</h2>
+        <p class="seccion__subtitulo">
+          Trabajo personalmente en cada instalación para garantizar resultados de calidad
+          y estes seguro desde el primer día.
+        </p>
+
+        <div class="grilla-servicios row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/alarma.webp" class="card-img-top" alt="Panel de alarma instalado en la pared de una vivienda" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Alarmas y seguridad</h3>
+                <p class="tarjeta-servicio__texto">
+                Instalación y mantenimiento de sistemas de alarma profesionales para
+                hogares y comercios. Configuración personalizada según tu espacio.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/camaras.webp" class="card-img-top" alt="Cámara de seguridad exterior montada sobre pared de piedra" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Cámaras de vigilancia</h3>
+                <p class="tarjeta-servicio__texto">
+                Instalación de cámaras IP y sistemas CCTV con acceso remoto desde tu
+                celular. Cobertura interior y exterior, de día y de noche.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/riego.webp" class="card-img-top" alt="Aspersor de riego automático funcionando sobre césped verde" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Riego automatizado</h3>
+                <p class="tarjeta-servicio__texto">
+                Sistemas de riego inteligente para jardines y espacios verdes.
+                Programación horaria, sensores de humedad y control desde la app.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/pileta.webp" class="card-img-top" alt="Pileta con iluminación LED azul al atardecer" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Tecnología para piletas</h3>
+                <p class="tarjeta-servicio__texto">
+                Automatización de sistemas de piletas: bombas, iluminación, climatización
+                y control desde cualquier lugar con tu smartphone.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/movimiento.webp" class="card-img-top" alt="Minicargadora trabajando en una obra de movimiento de suelos" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Movimiento de suelos</h3>
+                <p class="tarjeta-servicio__texto">Obras de excavación precisa, zanjeo y limpieza de canales
+                con minicargadora RIPPA RS04 y miniexcavadora R15-PRO operadas por un especialista técnico.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-servicio card h-100">
+              <img src="assets/img/domotica.webp" class="card-img-top" alt="Panel de control domótico táctil en pared de interior" loading="lazy" width="451" height="367" />
+              <div class="card-body">
+                <h3 class="tarjeta-servicio__titulo">Sistemas a medida</h3>
+                <p class="tarjeta-servicio__texto">
+                ¿Tenés una necesidad específica? Diseño e instalo soluciones
+                tecnológicas personalizadas para cada caso.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top: 2.5rem;">
+          <a href="secciones/servicios.html" class="btn btn--rojo">Ver todos los servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NÚMEROS ==================== -->
+    <section class="seccion seccion--negro" aria-label="Por qué elegirnos">
+      <div class="contenedor container">
+        <h2 class="seccion__titulo" style="color:var(--blanco); margin-bottom:3rem;">
+          La <span>confianza</span> que da resultados
+        </h2>
+        <div class="grilla-ventajas row row-cols-2 row-cols-lg-4 g-4">
+          <div class="ventaja col">
+            <div class="ventaja__num">+20</div>
+            <div class="ventaja__label">Años de experiencia</div>
+          </div>
+          <div class="ventaja col">
+            <div class="ventaja__num">100%</div>
+            <div class="ventaja__label">Atención personal</div>
+          </div>
+          <div class="ventaja col">
+            <div class="ventaja__num">24h</div>
+            <div class="ventaja__label">Respuesta rápida</div>
+          </div>
+          <div class="ventaja col">
+            <div class="ventaja__num">★★★</div>
+            <div class="ventaja__label">Materiales Premium</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOBRE JULIÁN (preview) ==================== -->
+    <section class="seccion seccion--gris" id="sobre" aria-labelledby="tit-sobre">
+      <div class="contenedor container">
+        <div class="sobre-grid row align-items-center g-4">
+          <div class="sobre-img col-12 col-md-5" aria-hidden="true">
+            <img src="assets/img/julian-mozun.webp" alt="Retrato de Julián Mozún, especialista técnico de campo"/>
+          </div>
+          <div class="sobre-texto col-12 col-md-7">
+            <h2 class="seccion__titulo" id="tit-sobre">
+              Hola, soy <span>Julián Mozún</span>
+            </h2>
+            <p style="color:#555; margin-bottom:1rem; line-height:1.7;">
+              Soy el fundador y técnico de Bajo Control. Trabajo hace más de 20 años en
+              instalación de sistemas de seguridad y tecnología en 9 de Julio y la región.
+            </p>
+            <blockquote>
+              "Mi negocio se construyó sobre la recomendación de mis clientes.
+              Trabajo yo personalmente para que cada resultado sea el mejor."
+            </blockquote>
+            <p style="color:#555; line-height:1.7;">
+              Cada instalación la hago yo mismo para garantizar
+              la calidad que prometí desde el primer contacto.
+            </p>
+            <div style="margin-top:1.5rem;">
+              <a href="secciones/nosotros.html" class="btn btn--outline-rojo">Conocé más sobre mí</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA CONTACTO ==================== -->
+    <section class="seccion seccion--rojo" aria-label="Llamada a la acción">
+      <div class="contenedor container" style="text-align:center;">
+        <h2 class="seccion__titulo" style="color:var(--blanco); margin-bottom:1rem;">
+          ¿Listo para tener todo Bajo Control?
+        </h2>
+        <p style="color:rgba(255,255,255,0.85); font-size:1.05rem; margin-bottom:2rem; max-width:520px; margin-left:auto; margin-right:auto;">
+          Contactame hoy y te doy un presupuesto sin costo.
+        </p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="secciones/contacto.html" class="btn btn--blanco">Escribime ahora</a>
+          <a href="tel:+5423174055851" class="btn btn--outline-blanco">📞 (+54) 2317 40-5851</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-logo">Bajo Control</div>
+    <div class="footer-sep"></div>
+    <p>
+      📍 9 de Julio, Buenos Aires (CP 6500)<br />
+      📧 <a href="mailto:bajocontrolmozun@gmail.com" style="color:rgba(255,255,255,0.65);">bajocontrolmozun@gmail.com</a>
+      &nbsp;·&nbsp;
+      📞 <a href="tel:+5423174055851" style="color:rgba(255,255,255,0.65);">(+54) 2317 40-5851</a>
+    </p>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a
+    href="https://wa.me/5492317405851?text=Hola%20Juli%C3%A1n%2C%20te%20escribo%20desde%20el%20sitio%20web%20de%20Bajo%20Control.%20Me%20interesa%20pedirte%20un%20presupuesto."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

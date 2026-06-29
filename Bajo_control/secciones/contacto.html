@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Solicitá una cotización técnica sin costo. Evalúo los requerimientos de tu propiedad e infraestructura, brindando una propuesta profesional a medida." />
+
+  <title>Contacto — Bajo Control</title>
+  <!-- Meta autor (faltaba) -->
+  <meta name="author" content="Julián Mozún" />
+
+  <!-- Favicon y theme -->
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <meta name="theme-color" content="#DA0F0F" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto — Bajo Control" />
+  <meta property="og:description" content="Solicitá una evaluación técnica sin costo. Te respondo personalmente para confeccionar tu propuesta a medida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Bajo Control" />
+
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-overrides.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .page-hero {
+      background: var(--negro);
+      color: var(--blanco);
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-family: var(--fuente-titulo);
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      margin-bottom: 0.8rem;
+    }
+    .page-hero h1 span { color: var(--rojo); }
+    .page-hero p { color: rgba(255,255,255,0.7); max-width:500px; margin:0 auto; }
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1rem;
+      font-family: var(--fuente-titulo);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.5); }
+    .breadcrumb a:hover { color: var(--rojo); }
+
+    .contacto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contacto-aside h2 {
+      font-family: var(--fuente-titulo);
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+    .contacto-aside h2 span { color: var(--rojo); }
+
+    .map-placeholder {
+      background: var(--gris-claro);
+      border-radius: 10px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      border: 2px dashed var(--gris-med);
+      color: #888;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .map-placeholder span { font-size: 2rem; }
+
+    .form-card {
+      background: var(--blanco);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      border: 1px solid var(--gris-claro);
+    }
+
+    .form-card h2 {
+      font-family: var(--fuente-titulo);
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 860px) {
+      .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .form-card { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header>
+    <nav class="navbar" aria-label="Menú principal">
+      <a href="../index.html" class="navbar__logo" aria-label="Inicio">
+        <div class="navbar__logo-oval"><span>Bajo Control</span></div>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Sobre mí</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> / Contacto</p>
+      <h1>Hablemos <span>hoy</span></h1>
+      <p>Completá el formulario adjunto. Analizo las especificaciones de tu proyecto para confeccionar una propuesta técnica detallada y sin costo de evaluación.</p>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor container">
+        <div class="contacto-grid">
+
+          <!-- Aside: datos de contacto -->
+          <aside aria-label="Información de contacto">
+            <h2>Contacto <span>directo</span></h2>
+
+            <div class="contacto-datos">
+              <div class="dato-contacto">
+                <div class="dato-contacto__icono" aria-hidden="true">📞</div>
+                <div class="dato-contacto__info">
+                  <strong>Teléfono</strong>
+                  <a href="tel:+5423174055851">(+54) 2317 40-5851</a>
+                </div>
+              </div>
+
+              <div class="dato-contacto">
+                <div class="dato-contacto__icono" aria-hidden="true">📧</div>
+                <div class="dato-contacto__info">
+                  <strong>Correo electrónico</strong>
+                  <a href="mailto:bajocontrolmozun@gmail.com">bajocontrolmozun@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="dato-contacto">
+                <div class="dato-contacto__icono" aria-hidden="true">📍</div>
+                <div class="dato-contacto__info">
+                  <strong>Ubicación</strong>
+                  <span>9 de Julio, Buenos Aires<br />CP 6500</span>
+                </div>
+              </div>
+
+              <div class="dato-contacto">
+                <div class="dato-contacto__icono" aria-hidden="true">🕐</div>
+                <div class="dato-contacto__info">
+                  <strong>Horario de atención</strong>
+                  <span>Lun a Vie: 8:00 – 18:00 hs<br />Sáb: 8:00 – 13:00 hs</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ratio ratio-16x9 mt-4" style="border-radius:10px; overflow:hidden;">
+              <iframe
+                src="https://www.google.com/maps?q=9%20de%20Julio%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
+                title="Ubicación de Bajo Control en 9 de Julio, Buenos Aires"
+                style="border:0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </aside>
+
+          <!-- Formulario -->
+          <div>
+            <div class="form-card">
+              <h2>Iniciá tu consulta técnica</h2>
+              
+              <form id="form-contacto" novalidate aria-label="Formulario de contacto">
+                <div class="form-grid row g-3">
+
+                  <div class="form-grupo form-grupo--full col-12">
+                    <label for="nombre" class="form-label">Nombre completo *</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Juan García"
+                      autocomplete="name"
+                      required
+                      aria-required="true"
+                      aria-describedby="err-nombre"
+                    />
+                    <span class="msg-error" id="err-nombre" role="alert"></span>
+                  </div>
+
+                  <div class="form-grupo form-grupo--full col-12">
+                    <label for="telefono" class="form-label">Teléfono *</label>
+                    <input
+                      class="form-control"
+                      type="tel"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="(+54) 2317 000-000"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      required
+                      aria-required="true"
+                      aria-describedby="err-telefono"
+                    />
+                    <span class="msg-error" id="err-telefono" role="alert"></span>
+                  </div>
+
+                  <div class="form-grupo form-grupo--full col-12">
+                    <label for="email">Correo electrónico *</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="tu@correo.com"
+                      autocomplete="email"
+                      aria-required="true"
+                      aria-describedby="err-email"
+                    />
+                    <span class="msg-error" id="err-email" role="alert"></span>
+                  </div>
+
+                  <div class="form-grupo form-grupo--full col-12">
+                    <label for="servicio">Servicio que necesitás *</label>
+                    <select class="form-select" id="servicio" name="servicio" aria-required="true" aria-describedby="err-servicio">
+                      <option value="">— Seleccioná una opción —</option>
+                      <option value="alarmas">Alarmas y sistemas de seguridad</option>
+                      <option value="camaras">Cámaras de vigilancia</option>
+                      <option value="riego">Riego automatizado</option>
+                      <option value="piletas">Tecnología para piletas</option>
+                      <option value="suelos">Movimiento de suelos</option>
+                      <option value="medida">Sistema a medida / otro</option>
+                    </select>
+                    <span class="msg-error" id="err-servicio" role="alert"></span>
+                  </div>
+
+                  <div class="form-grupo form-grupo--full col-12">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="mensaje"
+                      placeholder= "Detallá los requerimientos técnicos, la localidad u ubicación del inmueble, y cualquier parámetro que me permita confeccionar una cotización precisa..."
+                      aria-required="true"
+                      aria-describedby="err-mensaje"
+                    ></textarea>
+                    <span class="msg-error" id="err-mensaje" role="alert"></span>
+                  </div>
+
+                </div>
+
+                <div style="margin-top:1.5rem;">
+                  <button type="submit" class="btn btn--rojo w-100 justify-content-center fs-6">
+                    Enviar mensaje ✉️
+                  </button>
+                </div>
+
+                <div id="form-feedback" role="status" aria-live="polite"></div>
+
+                <p style="font-size:0.8rem; color:#888; margin-top:1rem; text-align:center;">
+                  * Campos obligatorios.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Bajo Control</div>
+    <div class="footer-sep"></div>
+    <p>
+      📍 9 de Julio, Buenos Aires (CP 6500)<br />
+      📧 <a href="mailto:bajocontrolmozun@gmail.com" style="color:rgba(255,255,255,0.65);">bajocontrolmozun@gmail.com</a>
+      &nbsp;·&nbsp;
+      📞 <a href="tel:+5423174055851" style="color:rgba(255,255,255,0.65);">(+54) 2317 40-5851</a>
+    </p>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a
+    href="https://wa.me/5492317405851?text=Hola%20Juli%C3%A1n%2C%20te%20escribo%20desde%20el%20sitio%20web%20de%20Bajo%20Control.%20Me%20interesa%20pedirte%20un%20presupuesto."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

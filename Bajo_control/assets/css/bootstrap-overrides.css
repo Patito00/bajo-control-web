@@ -1,0 +1,68 @@
+/* ===========================
+   BOOTSTRAP OVERRIDES — Bajo Control
+   Este archivo va ENTRE bootstrap.min.css y styles.css.
+   Neutraliza los resets de Bootstrap que rompen el diseño custom.
+   =========================== */
+
+/* Tipografía: forzar Barlow en todo el sitio */
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, button, input, select, textarea {
+  font-family: var(--fuente-texto);
+}
+
+/* Headings: Barlow Condensed */
+h1, h2, h3, h4 {
+  font-family: var(--fuente-titulo);
+}
+
+/* Neutralizar border-radius global de Bootstrap en contenedores */
+.navbar,
+.hero,
+.seccion,
+footer {
+  border-radius: 0 !important;
+}
+
+/* Bootstrap pisa margin-bottom en headings — neutralizar */
+h1, h2, h3 {
+  margin-bottom: 0;
+}
+
+/* Bootstrap pisa margin en párrafos — mantener control propio */
+p {
+  margin-bottom: 0;
+}
+
+/* Neutralizar estilos de Bootstrap en .btn para usar los nuestros */
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+  outline: none;
+  font-family: var(--fuente-titulo);
+}
+
+/* Neutralizar form-control de Bootstrap */
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  border-radius: var(--radio) !important;
+  font-family: var(--fuente-texto) !important;
+}
+
+/* Evitar que Bootstrap .container limite el ancho de nuestros layouts */
+.contenedor {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Cuando .contenedor se combina con .container de Bootstrap y adentro
+   hay un .row, restauramos un padding lateral mínimo para compensar
+   los gutters negativos del row (margin: 0 -.75rem) y evitar overflow
+   que fuerza el wrap de las columnas. */
+.contenedor.container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
